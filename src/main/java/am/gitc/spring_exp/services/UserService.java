@@ -9,13 +9,13 @@ public interface UserService {
 
     List<UserEntity> getAll();
 
-    Optional<UserEntity> getUserById(long id);
+    Optional<UserEntity> getUserById(int id);
 
     UserEntity getUserByEmail(String email);
 
     UserEntity save(UserEntity userEntity);
 
-    void delete(long id);
+    void delete(int id);
 
     UserEntity getUserByEmailAndPassword(String email,String password);
 

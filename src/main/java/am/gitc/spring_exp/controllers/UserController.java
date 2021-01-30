@@ -26,5 +26,6 @@ public class UserController {
         model.addObject("users",users);
         model.setViewName("user/home");
         return model;
+//        return users;
     }
 }
