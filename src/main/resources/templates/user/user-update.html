@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>User Update</title>
+</head>
+<body>
+
+<form th:action="@{/user-update}" method="post" th:object="${user}">
+    <div>
+        <input readonly type="text" th:field="*{id}" name="id" placeholder="Id">
+    </div>
+
+    <div>
+        <input type="text" th:field="*{firstName}" name="firstName" placeholder="Name">
+        <label th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}"></label>
+    </div>
+
+    <div>
+        <input type="text" th:field="*{lastName}" name="lastName" placeholder="Surname">
+        <label th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}"></label>
+    </div>
+
+    <div>
+        <input type="email" th:field="*{email}" name="email" placeholder="Email">
+        <label th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></label>
+    </div>
+
+    <div>
+        <input type="text" th:field="*{password}" name="password" placeholder="Password">
+        <label th:if="${#fields.hasErrors('password')}" th:errors="*{password}"></label>
+    </div>
+    <button type="submit" name="submit">Update</button>
+</form>
+
+</body>
+</html>

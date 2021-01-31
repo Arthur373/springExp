@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <title>User Create</title>
+</head>
+<body>
+<form th:action="@{/user-create}" method="post" th:object="${user}">
+    <div>
+        <input type="text" th:field="*{firstName}" placeholder="Name">
+    </div>
+    <div>
+        <input type="text" th:field="*{lastName}" placeholder="Surname">
+    </div>
+    <div>
+        <input type="email" th:field="*{email}" placeholder="Email">
+    </div>
+    <div>
+        <input type="password" th:field="*{password}" placeholder="Password">
+    </div>
+    <button type="submit" name="submit">Create</button>
+</form>
+</body>
+</html>

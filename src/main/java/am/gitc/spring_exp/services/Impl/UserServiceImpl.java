@@ -3,6 +3,7 @@ package am.gitc.spring_exp.services.Impl;
 import am.gitc.spring_exp.entity.UserEntity;
 import am.gitc.spring_exp.repositories.UserRepository;
 import am.gitc.spring_exp.services.UserService;
+import org.bson.types.ObjectId;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -26,7 +27,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public Optional<UserEntity> getUserById(int id) {
+    public Optional<UserEntity> getUserById(ObjectId id) {
         return userRepository.findById(id);
     }
 
@@ -42,7 +43,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void delete(int id) {
+    public void deleteUserById(ObjectId id) {
         userRepository.deleteById(id);
     }
 
