@@ -1,10 +1,13 @@
 package am.gitc.spring_exp.services.Impl;
 
 import am.gitc.spring_exp.entity.UserEntity;
+import am.gitc.spring_exp.exceptions.UserRegistrationException;
 import am.gitc.spring_exp.repositories.UserRepository;
 import am.gitc.spring_exp.services.UserService;
+import lombok.NoArgsConstructor;
 import org.bson.types.ObjectId;
 //import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -16,6 +19,7 @@ public class UserServiceImpl implements UserService {
     private final UserRepository userRepository;
 //    private final PasswordEncoder passwordEncoder;
 
+    @Autowired
     public UserServiceImpl(UserRepository userRepository) {
         this.userRepository = userRepository;
 //        this.passwordEncoder = passwordEncoder;
@@ -39,7 +43,10 @@ public class UserServiceImpl implements UserService {
     @Override
     public UserEntity save(UserEntity userEntity) {
 //        userEntity.setPassword(passwordEncoder.encode(userEntity.getPassword()));
-        return userRepository.save(userEntity);
+        if(userRepository.findUserEntityByEmail(userEntity.getEmail()) == null) {
+            return userRepository.save(userEntity);
+        }
+        throw new UserRegistrationException("User whit this email exists");
     }
 
     @Override

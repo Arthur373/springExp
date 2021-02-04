@@ -15,6 +15,13 @@ import org.springframework.data.mongodb.core.mapping.Field;
 @Document(collection = "users")
 public class UserEntity {
 
+    public UserEntity(String firstName, String lastName, String email, String password) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.password = password;
+    }
+
     @Id
     private ObjectId id;
 

@@ -65,7 +65,7 @@ public class UserController {
     }
 
     @GetMapping("/user-delete/{id}")
-    public ModelAndView updateUser(@PathVariable("id") ObjectId id) {
+    public ModelAndView deleteUser(@PathVariable("id") ObjectId id) {
         ModelAndView model = new ModelAndView();
         this.userService.deleteUserById(id);
         model.setViewName("redirect:/users");
