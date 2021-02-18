@@ -1,0 +1,693 @@
+2021-02-16 10:45:14.110 INFO  a.g.spring_exp.SpringExpApplication - Starting SpringExpApplication using Java 14.0.1 on DESKTOP-HV98VPO with PID 9068 (C:\Users\Arthur\Desktop\spring_exp\target\classes started by Arthur in C:\Users\Arthur\Desktop\spring_exp)
+2021-02-16 10:45:14.115 INFO  a.g.spring_exp.SpringExpApplication - No active profile set, falling back to default profiles: default
+2021-02-16 10:45:14.359 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-02-16 10:45:14.360 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-02-16 10:45:17.714 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-16 10:45:17.715 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-16 10:45:17.826 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface am.gitc.spring_exp.repositories.UserRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2021-02-16 10:45:17.852 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 122 ms. Found 1 JPA repository interfaces.
+2021-02-16 10:45:17.928 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-16 10:45:17.929 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-02-16 10:45:17.954 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface am.gitc.spring_exp.repositories.UserDAO. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2021-02-16 10:45:17.982 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 52 ms. Found 1 MongoDB repository interfaces.
+2021-02-16 10:45:19.787 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-02-16 10:45:19.858 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-16 10:45:19.859 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-02-16 10:45:19.859 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-16 10:45:20.084 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-02-16 10:45:20.084 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5722 ms
+2021-02-16 10:45:20.655 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-16 10:45:20.809 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-02-16 10:45:21.268 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-02-16 10:45:21.495 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-02-16 10:45:23.737 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-02-16 10:45:23.850 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-02-16 10:45:27.171 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-16 10:45:27.186 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-16 10:45:27.433 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-02-16 10:45:27.859 INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-02-16 10:45:28.039 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:5}] to localhost:27017
+2021-02-16 10:45:28.039 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:4}] to localhost:27017
+2021-02-16 10:45:28.041 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=135356300}
+2021-02-16 10:45:29.954 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-16 10:45:30.854 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-02-16 10:45:30.885 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-16 10:45:30.920 INFO  a.g.spring_exp.SpringExpApplication - Started SpringExpApplication in 19.503 seconds (JVM running for 28.665)
+2021-02-16 10:46:27.981 INFO  o.a.coyote.http11.Http11Processor - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x020x000x010x000x010xfc0x030x030x870xb90xe40xf8p0xbc0xf660xf00xb70x1cT0xd80xf10xdd0x0a,L0x820xf60x9c0xe10xb0}0x95p0xa80x1dS0xa50xff0xc9]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:417)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:261)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-02-16 10:46:28.067 INFO  o.a.coyote.http11.Http11Processor - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x020x000x010x000x010xfc0x030x034RGL0xdb:0x06P0x0b?0x120x060xdb0x0d0x1fb0xcf0xb2Q0x12=0xe80xb20xa50x890x1e0xfe0xc50xf0Gd0xa5]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:417)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:261)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-02-16 10:54:53.684 INFO  a.g.spring_exp.SpringExpApplication - Starting SpringExpApplication using Java 14.0.1 on DESKTOP-HV98VPO with PID 16536 (C:\Users\Arthur\Desktop\spring_exp\target\classes started by Arthur in C:\Users\Arthur\Desktop\spring_exp)
+2021-02-16 10:54:53.693 INFO  a.g.spring_exp.SpringExpApplication - No active profile set, falling back to default profiles: default
+2021-02-16 10:54:53.839 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-02-16 10:54:53.840 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-02-16 10:54:56.028 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-16 10:54:56.029 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-16 10:54:56.116 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface am.gitc.spring_exp.repositories.UserRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2021-02-16 10:54:56.168 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 125 ms. Found 1 JPA repository interfaces.
+2021-02-16 10:54:56.216 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-16 10:54:56.217 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-02-16 10:54:56.233 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface am.gitc.spring_exp.repositories.UserDAO. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2021-02-16 10:54:56.247 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29 ms. Found 1 MongoDB repository interfaces.
+2021-02-16 10:54:57.880 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-02-16 10:54:57.891 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-16 10:54:57.891 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-02-16 10:54:57.892 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-16 10:54:58.100 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-02-16 10:54:58.101 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4259 ms
+2021-02-16 10:54:59.067 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-16 10:54:59.120 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-02-16 10:54:59.254 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-02-16 10:54:59.495 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-02-16 10:55:00.021 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-02-16 10:55:00.034 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-02-16 10:55:01.053 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-16 10:55:01.063 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-16 10:55:01.227 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-02-16 10:55:01.471 INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-02-16 10:55:01.536 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:7}] to localhost:27017
+2021-02-16 10:55:01.536 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:6}] to localhost:27017
+2021-02-16 10:55:01.538 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=29065700}
+2021-02-16 10:55:03.087 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-16 10:55:03.722 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-02-16 10:55:03.746 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-16 10:55:03.757 INFO  a.g.spring_exp.SpringExpApplication - Started SpringExpApplication in 11.009 seconds (JVM running for 14.597)
+2021-02-16 10:56:28.031 INFO  o.a.coyote.http11.Http11Processor - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x020x000x010x000x010xfc0x030x03k]0xd2^0xa00xf70xcc0xd6e0xcf0xde0xb40xdd0xe50xf80x9a0xdd20xa90x87@0x7f0x830x1e40xe1R0xb5'0xc40xbc0xff]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:417)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:261)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-02-16 10:56:28.066 INFO  o.a.coyote.http11.Http11Processor - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x020x000x010x000x010xfc0x030x030x9e)n0xf0I0x0d0x0a70x880xb00xa20x0fH0xadE0xa6p0xc9}-0xad|0x1f0x860xee0x960x9e0x9e0xd9n0xcb0xe5]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:417)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:261)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-02-16 11:04:06.461 INFO  a.g.spring_exp.SpringExpApplication - Starting SpringExpApplication using Java 14.0.1 on DESKTOP-HV98VPO with PID 3892 (C:\Users\Arthur\Desktop\spring_exp\target\classes started by Arthur in C:\Users\Arthur\Desktop\spring_exp)
+2021-02-16 11:04:06.465 INFO  a.g.spring_exp.SpringExpApplication - No active profile set, falling back to default profiles: default
+2021-02-16 11:04:06.549 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-02-16 11:04:06.550 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-02-16 11:04:07.461 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-16 11:04:07.462 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-16 11:04:07.522 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface am.gitc.spring_exp.repositories.UserRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2021-02-16 11:04:07.549 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 79 ms. Found 1 JPA repository interfaces.
+2021-02-16 11:04:07.575 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-16 11:04:07.576 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-02-16 11:04:07.582 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface am.gitc.spring_exp.repositories.UserDAO. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2021-02-16 11:04:07.590 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 1 MongoDB repository interfaces.
+2021-02-16 11:04:08.555 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-02-16 11:04:08.593 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-16 11:04:08.594 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-02-16 11:04:08.594 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-16 11:04:08.869 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-02-16 11:04:08.869 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2318 ms
+2021-02-16 11:04:09.258 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-16 11:04:09.346 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-02-16 11:04:09.602 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-02-16 11:04:09.783 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-02-16 11:04:10.731 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-02-16 11:04:10.751 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-02-16 11:04:11.713 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-16 11:04:11.728 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-16 11:04:11.811 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-02-16 11:04:12.037 INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-02-16 11:04:12.116 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:9}] to localhost:27017
+2021-02-16 11:04:12.116 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:8}] to localhost:27017
+2021-02-16 11:04:12.126 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=47273300}
+2021-02-16 11:04:13.289 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-16 11:04:13.791 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-02-16 11:04:13.814 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-16 11:04:13.826 INFO  a.g.spring_exp.SpringExpApplication - Started SpringExpApplication in 8.106 seconds (JVM running for 11.163)
+2021-02-16 11:09:12.665 INFO  a.g.spring_exp.SpringExpApplication - Starting SpringExpApplication using Java 14.0.1 on DESKTOP-HV98VPO with PID 8972 (C:\Users\Arthur\Desktop\spring_exp\target\classes started by Arthur in C:\Users\Arthur\Desktop\spring_exp)
+2021-02-16 11:09:12.671 INFO  a.g.spring_exp.SpringExpApplication - No active profile set, falling back to default profiles: default
+2021-02-16 11:09:12.831 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-02-16 11:09:12.832 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-02-16 11:09:14.070 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-16 11:09:14.071 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-16 11:09:14.143 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface am.gitc.spring_exp.repositories.UserRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2021-02-16 11:09:14.168 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 71 ms. Found 1 JPA repository interfaces.
+2021-02-16 11:09:14.200 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-16 11:09:14.201 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-02-16 11:09:14.208 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface am.gitc.spring_exp.repositories.UserDAO. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2021-02-16 11:09:14.216 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 1 MongoDB repository interfaces.
+2021-02-16 11:09:15.346 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-02-16 11:09:15.362 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-16 11:09:15.363 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-02-16 11:09:15.363 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-16 11:09:15.548 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-02-16 11:09:15.549 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2715 ms
+2021-02-16 11:09:15.923 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-16 11:09:15.980 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-02-16 11:09:16.117 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-02-16 11:09:16.239 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-02-16 11:09:16.695 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-02-16 11:09:16.712 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-02-16 11:09:17.655 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-16 11:09:17.665 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-16 11:09:17.756 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-02-16 11:09:18.717 INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-02-16 11:09:18.794 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:11}] to localhost:27017
+2021-02-16 11:09:18.796 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=29826300}
+2021-02-16 11:09:18.800 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:10}] to localhost:27017
+2021-02-16 11:09:19.671 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-16 11:09:20.410 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-02-16 11:09:20.449 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-16 11:09:20.469 INFO  a.g.spring_exp.SpringExpApplication - Started SpringExpApplication in 8.576 seconds (JVM running for 11.542)
+2021-02-16 11:12:23.962 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-16 11:12:23.962 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-02-16 11:12:23.964 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-02-16 11:12:31.919 INFO  am.gitc.spring_exp.aspect.LogAspect - returning : -[]
+2021-02-16 11:12:31.923 INFO  am.gitc.spring_exp.aspect.LogAspect - after : {-am.gitc.spring_exp.services.Impl.UserServImpl@67a247b8-getAll-} args=[]
+2021-02-16 11:12:31.930 INFO  am.gitc.spring_exp.aspect.LogAspect - Around Execution of method {-am.gitc.spring_exp.services.Impl.UserServImpl@67a247b8-getAll-} took 597 ms
+2021-02-16 11:12:44.701 INFO  am.gitc.spring_exp.aspect.LogAspect - returning : return try void
+2021-02-16 11:12:44.701 INFO  am.gitc.spring_exp.aspect.LogAspect - after : {-am.gitc.spring_exp.services.Impl.UserServImpl@67a247b8-getUserByEmail-} args=[arthur@mail.ru]
+2021-02-16 11:12:44.701 INFO  am.gitc.spring_exp.aspect.LogAspect - Around Execution of method {-am.gitc.spring_exp.services.Impl.UserServImpl@67a247b8-getUserByEmail-} took 68 ms
+2021-02-16 11:12:44.913 INFO  am.gitc.spring_exp.aspect.LogAspect - returning : -UserModel(id=1, firstName=Arthur_session, lastName=Martirosyan, email=arthur@mail.ru, password=123456789)
+2021-02-16 11:12:44.914 INFO  am.gitc.spring_exp.aspect.LogAspect - after : {-am.gitc.spring_exp.services.Impl.UserServImpl@67a247b8-save-} args=[UserModel(id=1, firstName=Arthur_session, lastName=Martirosyan, email=arthur@mail.ru, password=123456789)]
+2021-02-16 11:12:44.914 INFO  am.gitc.spring_exp.aspect.LogAspect - Around Execution of method {-am.gitc.spring_exp.services.Impl.UserServImpl@67a247b8-save-} took 213 ms
+2021-02-16 11:17:07.974 INFO  a.g.spring_exp.SpringExpApplication - Starting SpringExpApplication using Java 14.0.1 on DESKTOP-HV98VPO with PID 736 (C:\Users\Arthur\Desktop\spring_exp\target\classes started by Arthur in C:\Users\Arthur\Desktop\spring_exp)
+2021-02-16 11:17:07.978 INFO  a.g.spring_exp.SpringExpApplication - No active profile set, falling back to default profiles: default
+2021-02-16 11:17:08.185 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-02-16 11:17:08.185 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-02-16 11:17:10.505 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-16 11:17:10.506 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-16 11:17:10.654 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface am.gitc.spring_exp.repositories.UserRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2021-02-16 11:17:10.690 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 157 ms. Found 1 JPA repository interfaces.
+2021-02-16 11:17:10.752 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-16 11:17:10.752 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-02-16 11:17:10.764 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface am.gitc.spring_exp.repositories.UserDAO. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2021-02-16 11:17:10.777 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 1 MongoDB repository interfaces.
+2021-02-16 11:17:12.557 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-02-16 11:17:12.572 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-16 11:17:12.573 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-02-16 11:17:12.573 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-16 11:17:12.747 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-02-16 11:17:12.749 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4562 ms
+2021-02-16 11:17:13.290 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-16 11:17:13.400 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-02-16 11:17:13.545 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-02-16 11:17:13.692 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-02-16 11:17:14.668 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-02-16 11:17:14.691 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-02-16 11:17:16.223 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-16 11:17:16.238 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-16 11:17:16.407 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-02-16 11:17:17.933 INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-02-16 11:17:18.031 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:13}] to localhost:27017
+2021-02-16 11:17:18.032 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:12}] to localhost:27017
+2021-02-16 11:17:18.042 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=28341500}
+2021-02-16 11:17:19.393 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-16 11:17:20.198 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-02-16 11:17:20.227 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-16 11:17:20.247 INFO  a.g.spring_exp.SpringExpApplication - Started SpringExpApplication in 13.581 seconds (JVM running for 17.714)
+2021-02-16 11:20:06.918 INFO  a.g.spring_exp.SpringExpApplication - Starting SpringExpApplication using Java 14.0.1 on DESKTOP-HV98VPO with PID 10208 (C:\Users\Arthur\Desktop\spring_exp\target\classes started by Arthur in C:\Users\Arthur\Desktop\spring_exp)
+2021-02-16 11:20:06.921 INFO  a.g.spring_exp.SpringExpApplication - No active profile set, falling back to default profiles: default
+2021-02-16 11:20:06.985 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-02-16 11:20:06.986 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-02-16 11:20:07.983 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-16 11:20:07.983 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-16 11:20:08.042 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface am.gitc.spring_exp.repositories.UserRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2021-02-16 11:20:08.063 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 62 ms. Found 1 JPA repository interfaces.
+2021-02-16 11:20:08.090 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-16 11:20:08.091 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-02-16 11:20:08.098 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface am.gitc.spring_exp.repositories.UserDAO. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2021-02-16 11:20:08.105 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 1 MongoDB repository interfaces.
+2021-02-16 11:20:09.004 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-02-16 11:20:09.016 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-16 11:20:09.017 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-02-16 11:20:09.017 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-16 11:20:09.125 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-02-16 11:20:09.125 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2138 ms
+2021-02-16 11:20:09.380 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-16 11:20:09.422 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-02-16 11:20:09.527 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-02-16 11:20:09.624 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-02-16 11:20:09.975 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-02-16 11:20:09.987 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-02-16 11:20:10.607 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-16 11:20:10.616 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-16 11:20:10.703 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-02-16 11:20:10.885 INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-02-16 11:20:10.941 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:14}] to localhost:27017
+2021-02-16 11:20:10.941 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:15}] to localhost:27017
+2021-02-16 11:20:10.943 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=22867700}
+2021-02-16 11:20:12.097 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-16 11:20:12.567 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-02-16 11:20:12.591 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-16 11:20:12.603 INFO  a.g.spring_exp.SpringExpApplication - Started SpringExpApplication in 6.221 seconds (JVM running for 8.411)
+2021-02-16 11:37:54.316 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-16 11:37:54.316 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-02-16 11:37:54.317 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-02-16 11:37:54.506 INFO  am.gitc.spring_exp.aspect.LogAspect - returning : -[UserModel(id=1, firstName=Arthur_session, lastName=Martirosyan, email=arthur@mail.ru, password=123456789)]
+2021-02-16 11:37:54.509 INFO  am.gitc.spring_exp.aspect.LogAspect - after : {-am.gitc.spring_exp.services.Impl.UserServImpl@373f2c0c-getAll-} args=[]
+2021-02-16 11:37:54.513 INFO  am.gitc.spring_exp.aspect.LogAspect - Around Execution of method {-am.gitc.spring_exp.services.Impl.UserServImpl@373f2c0c-getAll-} took 172 ms
+2021-02-16 11:39:43.073 INFO  am.gitc.spring_exp.aspect.LogAspect - returning : return try void
+2021-02-16 11:39:43.074 INFO  am.gitc.spring_exp.aspect.LogAspect - after : {-am.gitc.spring_exp.services.Impl.UserServImpl@373f2c0c-getUserByEmail-} args=[gago@mail.ru]
+2021-02-16 11:39:43.074 INFO  am.gitc.spring_exp.aspect.LogAspect - Around Execution of method {-am.gitc.spring_exp.services.Impl.UserServImpl@373f2c0c-getUserByEmail-} took 40 ms
+2021-02-16 11:39:43.139 INFO  am.gitc.spring_exp.aspect.LogAspect - returning : -UserModel(id=2, firstName=gago_session, lastName=Martirosyan, email=gago@mail.ru, password=123)
+2021-02-16 11:39:43.140 INFO  am.gitc.spring_exp.aspect.LogAspect - after : {-am.gitc.spring_exp.services.Impl.UserServImpl@373f2c0c-save-} args=[UserModel(id=2, firstName=gago_session, lastName=Martirosyan, email=gago@mail.ru, password=123)]
+2021-02-16 11:39:43.140 INFO  am.gitc.spring_exp.aspect.LogAspect - Around Execution of method {-am.gitc.spring_exp.services.Impl.UserServImpl@373f2c0c-save-} took 66 ms
+2021-02-16 11:39:43.176 INFO  am.gitc.spring_exp.aspect.LogAspect - returning : -[UserModel(id=1, firstName=Arthur_session, lastName=Martirosyan, email=arthur@mail.ru, password=123456789), UserModel(id=2, firstName=gago_session, lastName=Martirosyan, email=gago@mail.ru, password=123)]
+2021-02-16 11:39:43.176 INFO  am.gitc.spring_exp.aspect.LogAspect - after : {-am.gitc.spring_exp.services.Impl.UserServImpl@373f2c0c-getAll-} args=[]
+2021-02-16 11:39:43.177 INFO  am.gitc.spring_exp.aspect.LogAspect - Around Execution of method {-am.gitc.spring_exp.services.Impl.UserServImpl@373f2c0c-getAll-} took 5 ms
+2021-02-16 11:55:26.022 INFO  a.g.spring_exp.SpringExpApplication - Starting SpringExpApplication using Java 14.0.1 on DESKTOP-HV98VPO with PID 6548 (C:\Users\Arthur\Desktop\spring_exp\target\classes started by Arthur in C:\Users\Arthur\Desktop\spring_exp)
+2021-02-16 11:55:26.025 INFO  a.g.spring_exp.SpringExpApplication - No active profile set, falling back to default profiles: default
+2021-02-16 11:55:26.103 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-02-16 11:55:26.103 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-02-16 11:55:26.974 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-16 11:55:26.975 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-16 11:55:27.032 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface am.gitc.spring_exp.repositories.UserRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2021-02-16 11:55:27.052 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 69 ms. Found 1 JPA repository interfaces.
+2021-02-16 11:55:27.079 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-16 11:55:27.080 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-02-16 11:55:27.087 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface am.gitc.spring_exp.repositories.UserDAO. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2021-02-16 11:55:27.093 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 1 MongoDB repository interfaces.
+2021-02-16 11:55:27.992 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-02-16 11:55:28.001 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-16 11:55:28.001 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-02-16 11:55:28.002 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-16 11:55:28.112 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-02-16 11:55:28.112 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2007 ms
+2021-02-16 11:55:28.360 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-16 11:55:28.401 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-02-16 11:55:28.512 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-02-16 11:55:28.610 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-02-16 11:55:28.980 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-02-16 11:55:28.992 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-02-16 11:55:29.595 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-16 11:55:29.604 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-16 11:55:29.686 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-02-16 11:55:29.886 INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-02-16 11:55:29.939 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:20}] to localhost:27017
+2021-02-16 11:55:29.939 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:19}] to localhost:27017
+2021-02-16 11:55:29.941 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=20733500}
+2021-02-16 11:55:31.088 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-16 11:55:31.566 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-02-16 11:55:31.592 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-16 11:55:31.604 INFO  a.g.spring_exp.SpringExpApplication - Started SpringExpApplication in 6.153 seconds (JVM running for 8.438)
+2021-02-16 12:04:22.644 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-16 12:04:22.645 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-02-16 12:04:22.646 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-02-16 12:04:22.790 INFO  am.gitc.spring_exp.aspect.LogAspect - returning : -[]
+2021-02-16 12:04:22.792 INFO  am.gitc.spring_exp.aspect.LogAspect - after : {-am.gitc.spring_exp.services.Impl.UserServImpl@7eea292-getAll-} args=[]
+2021-02-16 12:04:22.796 INFO  am.gitc.spring_exp.aspect.LogAspect - Around Execution of method {-am.gitc.spring_exp.services.Impl.UserServImpl@7eea292-getAll-} took 124 ms
+2021-02-16 12:04:31.748 INFO  am.gitc.spring_exp.aspect.LogAspect - returning : return try void
+2021-02-16 12:04:31.748 INFO  am.gitc.spring_exp.aspect.LogAspect - after : {-am.gitc.spring_exp.services.Impl.UserServImpl@7eea292-getUserByEmail-} args=[arthur@mail.ru]
+2021-02-16 12:04:31.748 INFO  am.gitc.spring_exp.aspect.LogAspect - Around Execution of method {-am.gitc.spring_exp.services.Impl.UserServImpl@7eea292-getUserByEmail-} took 36 ms
+2021-02-16 12:04:31.805 INFO  am.gitc.spring_exp.aspect.LogAspect - returning : -UserModel(id=1, firstName=Arthur, lastName=Martirosyan, email=arthur@mail.ru, password=123456789)
+2021-02-16 12:04:31.806 INFO  am.gitc.spring_exp.aspect.LogAspect - after : {-am.gitc.spring_exp.services.Impl.UserServImpl@7eea292-save-} args=[UserModel(id=1, firstName=Arthur, lastName=Martirosyan, email=arthur@mail.ru, password=123456789)]
+2021-02-16 12:04:31.806 INFO  am.gitc.spring_exp.aspect.LogAspect - Around Execution of method {-am.gitc.spring_exp.services.Impl.UserServImpl@7eea292-save-} took 58 ms
+2021-02-16 12:04:31.834 INFO  am.gitc.spring_exp.aspect.LogAspect - returning : -[UserModel(id=1, firstName=Arthur, lastName=Martirosyan, email=arthur@mail.ru, password=123456789)]
+2021-02-16 12:04:31.834 INFO  am.gitc.spring_exp.aspect.LogAspect - after : {-am.gitc.spring_exp.services.Impl.UserServImpl@7eea292-getAll-} args=[]
+2021-02-16 12:04:31.834 INFO  am.gitc.spring_exp.aspect.LogAspect - Around Execution of method {-am.gitc.spring_exp.services.Impl.UserServImpl@7eea292-getAll-} took 10 ms
+2021-02-16 12:04:54.979 INFO  am.gitc.spring_exp.aspect.LogAspect - returning : -Optional[UserModel(id=1, firstName=Arthur, lastName=Martirosyan, email=arthur@mail.ru, password=123456789)]
+2021-02-16 12:04:54.979 INFO  am.gitc.spring_exp.aspect.LogAspect - after : {-am.gitc.spring_exp.services.Impl.UserServImpl@7eea292-getUserById-} args=[1]
+2021-02-16 12:04:54.979 INFO  am.gitc.spring_exp.aspect.LogAspect - Around Execution of method {-am.gitc.spring_exp.services.Impl.UserServImpl@7eea292-getUserById-} took 47 ms
+2021-02-16 12:05:08.603 INFO  am.gitc.spring_exp.aspect.LogAspect - after : {-am.gitc.spring_exp.services.Impl.UserServImpl@7eea292-save-} args=[UserModel(id=1, firstName=Arthur_session, lastName=Martirosyan, email=arthur@mail.ru, password=123)]
+2021-02-16 12:05:08.699 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is javax.persistence.PersistenceException: org.hibernate.PersistentObjectException: detached entity passed to persist: am.gitc.spring_exp.entity.UserModel] with root cause
+org.hibernate.PersistentObjectException: detached entity passed to persist: am.gitc.spring_exp.entity.UserModel
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:120)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:55)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:102)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:720)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:706)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:362)
+	at com.sun.proxy.$Proxy110.persist(Unknown Source)
+	at am.gitc.spring_exp.services.Impl.UserServImpl.save(UserServImpl.java:48)
+	at am.gitc.spring_exp.services.Impl.UserServImpl$$FastClassBySpringCGLIB$$d3e12447.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:57)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:49)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at am.gitc.spring_exp.aspect.LogAspect.methodLifeTime(LogAspect.java:43)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692)
+	at am.gitc.spring_exp.services.Impl.UserServImpl$$EnhancerBySpringCGLIB$$33a65bcb.save(<generated>)
+	at am.gitc.spring_exp.controllers.UserModelController.updateUser(UserModelController.java:64)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-02-16 12:09:51.391 INFO  a.g.spring_exp.SpringExpApplication - Starting SpringExpApplication using Java 14.0.1 on DESKTOP-HV98VPO with PID 17600 (C:\Users\Arthur\Desktop\spring_exp\target\classes started by Arthur in C:\Users\Arthur\Desktop\spring_exp)
+2021-02-16 12:09:51.395 INFO  a.g.spring_exp.SpringExpApplication - No active profile set, falling back to default profiles: default
+2021-02-16 12:09:51.471 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-02-16 12:09:51.471 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-02-16 12:09:52.318 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-16 12:09:52.319 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-16 12:09:52.380 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface am.gitc.spring_exp.repositories.UserRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2021-02-16 12:09:52.415 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 76 ms. Found 1 JPA repository interfaces.
+2021-02-16 12:09:52.460 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-16 12:09:52.460 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-02-16 12:09:52.468 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface am.gitc.spring_exp.repositories.UserDAO. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2021-02-16 12:09:52.476 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 1 MongoDB repository interfaces.
+2021-02-16 12:09:53.446 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-02-16 12:09:53.459 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-16 12:09:53.460 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-02-16 12:09:53.460 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-16 12:09:53.580 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-02-16 12:09:53.580 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2107 ms
+2021-02-16 12:09:53.912 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-16 12:09:53.969 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-02-16 12:09:54.154 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-02-16 12:09:54.264 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-02-16 12:09:54.744 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-02-16 12:09:54.759 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-02-16 12:09:55.510 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-16 12:09:55.520 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-16 12:09:55.631 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-02-16 12:09:55.880 INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-02-16 12:09:55.950 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:21}] to localhost:27017
+2021-02-16 12:09:55.950 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:22}] to localhost:27017
+2021-02-16 12:09:55.952 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=24875000}
+2021-02-16 12:09:57.506 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-16 12:09:58.057 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-02-16 12:09:58.085 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-16 12:09:58.098 INFO  a.g.spring_exp.SpringExpApplication - Started SpringExpApplication in 7.156 seconds (JVM running for 10.645)
+2021-02-16 12:25:26.668 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-16 12:25:26.668 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-02-16 12:25:26.669 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-02-16 12:25:27.063 INFO  am.gitc.spring_exp.aspect.LogAspect - returning : -[UserModel(id=1, firstName=Arthur, lastName=Martirosyan, email=arthur@mail.ru, password=123456789)]
+2021-02-16 12:25:27.068 INFO  am.gitc.spring_exp.aspect.LogAspect - after : {-am.gitc.spring_exp.services.Impl.UserServImpl@207c2eb7-getAll-} args=[]
+2021-02-16 12:25:27.075 INFO  am.gitc.spring_exp.aspect.LogAspect - Around Execution of method {-am.gitc.spring_exp.services.Impl.UserServImpl@207c2eb7-getAll-} took 370 ms
+2021-02-16 12:25:34.581 INFO  am.gitc.spring_exp.aspect.LogAspect - returning : -Optional[UserModel(id=1, firstName=Arthur, lastName=Martirosyan, email=arthur@mail.ru, password=123456789)]
+2021-02-16 12:25:34.581 INFO  am.gitc.spring_exp.aspect.LogAspect - after : {-am.gitc.spring_exp.services.Impl.UserServImpl@207c2eb7-getUserById-} args=[1]
+2021-02-16 12:25:34.581 INFO  am.gitc.spring_exp.aspect.LogAspect - Around Execution of method {-am.gitc.spring_exp.services.Impl.UserServImpl@207c2eb7-getUserById-} took 44 ms
+2021-02-16 12:27:09.562 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m44s679ms161µs200ns).
+2021-02-16 12:27:34.110 INFO  am.gitc.spring_exp.aspect.LogAspect - after : {-am.gitc.spring_exp.services.Impl.UserServImpl@207c2eb7-save-} args=[UserModel(id=1, firstName=Arthur_session, lastName=Martirosyan, email=arthur@mail.ru, password=123)]
+2021-02-16 12:27:34.126 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is javax.persistence.PersistenceException: org.hibernate.PersistentObjectException: detached entity passed to persist: am.gitc.spring_exp.entity.UserModel] with root cause
+org.hibernate.PersistentObjectException: detached entity passed to persist: am.gitc.spring_exp.entity.UserModel
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:120)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:55)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:102)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:720)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:706)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:362)
+	at com.sun.proxy.$Proxy110.persist(Unknown Source)
+	at am.gitc.spring_exp.services.Impl.UserServImpl.save(UserServImpl.java:48)
+	at am.gitc.spring_exp.services.Impl.UserServImpl$$FastClassBySpringCGLIB$$d3e12447.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:57)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:49)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at am.gitc.spring_exp.aspect.LogAspect.methodLifeTime(LogAspect.java:43)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692)
+	at am.gitc.spring_exp.services.Impl.UserServImpl$$EnhancerBySpringCGLIB$$52bc0cb2.save(<generated>)
+	at am.gitc.spring_exp.controllers.UserModelController.updateUser(UserModelController.java:64)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-02-16 12:36:27.324 INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-16 12:36:27.330 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-02-16 12:36:27.360 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-02-16 12:36:27.373 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-02-16 12:36:38.835 INFO  a.g.spring_exp.SpringExpApplication - Starting SpringExpApplication using Java 14.0.1 on DESKTOP-HV98VPO with PID 15068 (C:\Users\Arthur\Desktop\spring_exp\target\classes started by Arthur in C:\Users\Arthur\Desktop\spring_exp)
+2021-02-16 12:36:38.841 INFO  a.g.spring_exp.SpringExpApplication - No active profile set, falling back to default profiles: default
+2021-02-16 12:36:38.941 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-02-16 12:36:38.942 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-02-16 12:36:40.122 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-16 12:36:40.123 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-16 12:36:40.261 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface am.gitc.spring_exp.repositories.UserRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2021-02-16 12:36:40.289 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 150 ms. Found 1 JPA repository interfaces.
+2021-02-16 12:36:40.319 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-16 12:36:40.320 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-02-16 12:36:40.327 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface am.gitc.spring_exp.repositories.UserDAO. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2021-02-16 12:36:40.337 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 1 MongoDB repository interfaces.
+2021-02-16 12:36:41.574 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-02-16 12:36:41.583 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-16 12:36:41.584 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-02-16 12:36:41.585 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-16 12:36:41.702 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-02-16 12:36:41.703 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2760 ms
+2021-02-16 12:36:41.976 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-16 12:36:42.023 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-02-16 12:36:42.137 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-02-16 12:36:42.230 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-02-16 12:36:42.588 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-02-16 12:36:42.601 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-02-16 12:36:43.546 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-16 12:36:43.556 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-16 12:36:43.644 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-02-16 12:36:43.884 INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-02-16 12:36:43.944 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:24}] to localhost:27017
+2021-02-16 12:36:43.944 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:23}] to localhost:27017
+2021-02-16 12:36:43.946 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=23912000}
+2021-02-16 12:36:46.133 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-16 12:36:46.788 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-02-16 12:36:46.812 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-16 12:36:46.826 INFO  a.g.spring_exp.SpringExpApplication - Started SpringExpApplication in 8.609 seconds (JVM running for 11.525)
+2021-02-16 12:38:14.624 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-16 12:38:14.624 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-02-16 12:38:14.626 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-02-16 12:38:15.201 INFO  am.gitc.spring_exp.aspect.LogAspect - returning : -[UserModel(id=1, firstName=Arthur, lastName=Martirosyan, email=arthur@mail.ru, password=123456789)]
+2021-02-16 12:38:15.204 INFO  am.gitc.spring_exp.aspect.LogAspect - after : {-am.gitc.spring_exp.services.Impl.UserServImpl@27fb9adf-getAll-} args=[]
+2021-02-16 12:38:15.206 INFO  am.gitc.spring_exp.aspect.LogAspect - Around Execution of method {-am.gitc.spring_exp.services.Impl.UserServImpl@27fb9adf-getAll-} took 551 ms
+2021-02-16 12:39:06.967 INFO  a.g.spring_exp.SpringExpApplication - Starting SpringExpApplication using Java 14.0.1 on DESKTOP-HV98VPO with PID 17588 (C:\Users\Arthur\Desktop\spring_exp\target\classes started by Arthur in C:\Users\Arthur\Desktop\spring_exp)
+2021-02-16 12:39:06.980 INFO  a.g.spring_exp.SpringExpApplication - No active profile set, falling back to default profiles: default
+2021-02-16 12:39:07.117 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-02-16 12:39:07.117 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-02-16 12:39:08.430 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-16 12:39:08.431 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-16 12:39:08.497 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface am.gitc.spring_exp.repositories.UserRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2021-02-16 12:39:08.524 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 78 ms. Found 1 JPA repository interfaces.
+2021-02-16 12:39:08.561 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-16 12:39:08.562 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-02-16 12:39:08.569 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface am.gitc.spring_exp.repositories.UserDAO. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2021-02-16 12:39:08.581 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 1 MongoDB repository interfaces.
+2021-02-16 12:39:09.781 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-02-16 12:39:09.792 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-16 12:39:09.793 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-02-16 12:39:09.794 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-16 12:39:09.948 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-02-16 12:39:09.948 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2828 ms
+2021-02-16 12:39:10.292 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-16 12:39:10.347 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-02-16 12:39:10.492 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-02-16 12:39:10.611 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-02-16 12:39:11.052 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-02-16 12:39:11.067 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-02-16 12:39:11.865 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-16 12:39:11.877 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-16 12:39:11.981 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-02-16 12:39:12.244 INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-02-16 12:39:12.317 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:26}] to localhost:27017
+2021-02-16 12:39:12.317 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:25}] to localhost:27017
+2021-02-16 12:39:12.319 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=27310301}
+2021-02-16 12:39:13.822 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-16 12:39:14.488 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-02-16 12:39:14.519 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-16 12:39:14.534 INFO  a.g.spring_exp.SpringExpApplication - Started SpringExpApplication in 8.457 seconds (JVM running for 12.141)
+2021-02-16 12:40:45.197 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-16 12:40:45.197 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-02-16 12:40:45.198 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-02-16 12:40:45.396 INFO  am.gitc.spring_exp.aspect.LogAspect - returning : -[UserModel(id=1, firstName=Arthur, lastName=Martirosyan, email=arthur@mail.ru, password=123456789)]
+2021-02-16 12:40:45.398 INFO  am.gitc.spring_exp.aspect.LogAspect - after : {-am.gitc.spring_exp.services.Impl.UserServImpl@78203178-getAll-} args=[]
+2021-02-16 12:40:45.403 INFO  am.gitc.spring_exp.aspect.LogAspect - Around Execution of method {-am.gitc.spring_exp.services.Impl.UserServImpl@78203178-getAll-} took 178 ms
+2021-02-16 12:40:49.209 INFO  am.gitc.spring_exp.aspect.LogAspect - returning : -Optional[UserModel(id=1, firstName=Arthur, lastName=Martirosyan, email=arthur@mail.ru, password=123456789)]
+2021-02-16 12:40:49.209 INFO  am.gitc.spring_exp.aspect.LogAspect - after : {-am.gitc.spring_exp.services.Impl.UserServImpl@78203178-getUserById-} args=[1]
+2021-02-16 12:40:49.209 INFO  am.gitc.spring_exp.aspect.LogAspect - Around Execution of method {-am.gitc.spring_exp.services.Impl.UserServImpl@78203178-getUserById-} took 30 ms
+2021-02-16 12:40:55.355 INFO  am.gitc.spring_exp.aspect.LogAspect - returning : -UserModel(id=1, firstName=Arthur_session, lastName=Martirosyan, email=arthur@mail.ru, password=123)
+2021-02-16 12:40:55.355 INFO  am.gitc.spring_exp.aspect.LogAspect - after : {-am.gitc.spring_exp.services.Impl.UserServImpl@78203178-save-} args=[UserModel(id=1, firstName=Arthur_session, lastName=Martirosyan, email=arthur@mail.ru, password=123)]
+2021-02-16 12:40:55.355 INFO  am.gitc.spring_exp.aspect.LogAspect - Around Execution of method {-am.gitc.spring_exp.services.Impl.UserServImpl@78203178-save-} took 264 ms
+2021-02-16 12:40:55.407 INFO  am.gitc.spring_exp.aspect.LogAspect - returning : -[UserModel(id=1, firstName=Arthur_session, lastName=Martirosyan, email=arthur@mail.ru, password=123)]
+2021-02-16 12:40:55.407 INFO  am.gitc.spring_exp.aspect.LogAspect - after : {-am.gitc.spring_exp.services.Impl.UserServImpl@78203178-getAll-} args=[]
+2021-02-16 12:40:55.407 INFO  am.gitc.spring_exp.aspect.LogAspect - Around Execution of method {-am.gitc.spring_exp.services.Impl.UserServImpl@78203178-getAll-} took 7 ms
+2021-02-16 12:42:57.363 INFO  am.gitc.spring_exp.aspect.LogAspect - returning : return try void
+2021-02-16 12:42:57.363 INFO  am.gitc.spring_exp.aspect.LogAspect - after : {-am.gitc.spring_exp.services.Impl.UserServImpl@78203178-getUserByEmail-} args=[gago@mail.ru]
+2021-02-16 12:42:57.363 INFO  am.gitc.spring_exp.aspect.LogAspect - Around Execution of method {-am.gitc.spring_exp.services.Impl.UserServImpl@78203178-getUserByEmail-} took 3 ms
+2021-02-16 12:42:57.467 INFO  am.gitc.spring_exp.aspect.LogAspect - returning : -UserModel(id=2, firstName=gago, lastName=Martirosyan, email=gago@mail.ru, password=123456789)
+2021-02-16 12:42:57.468 INFO  am.gitc.spring_exp.aspect.LogAspect - after : {-am.gitc.spring_exp.services.Impl.UserServImpl@78203178-save-} args=[UserModel(id=2, firstName=gago, lastName=Martirosyan, email=gago@mail.ru, password=123456789)]
+2021-02-16 12:42:57.468 INFO  am.gitc.spring_exp.aspect.LogAspect - Around Execution of method {-am.gitc.spring_exp.services.Impl.UserServImpl@78203178-save-} took 105 ms
+2021-02-16 12:42:57.484 INFO  am.gitc.spring_exp.aspect.LogAspect - returning : -[UserModel(id=1, firstName=Arthur_session, lastName=Martirosyan, email=arthur@mail.ru, password=123), UserModel(id=2, firstName=gago, lastName=Martirosyan, email=gago@mail.ru, password=123456789)]
+2021-02-16 12:42:57.484 INFO  am.gitc.spring_exp.aspect.LogAspect - after : {-am.gitc.spring_exp.services.Impl.UserServImpl@78203178-getAll-} args=[]
+2021-02-16 12:42:57.484 INFO  am.gitc.spring_exp.aspect.LogAspect - Around Execution of method {-am.gitc.spring_exp.services.Impl.UserServImpl@78203178-getAll-} took 5 ms
+2021-02-16 12:46:40.805 INFO  am.gitc.spring_exp.aspect.LogAspect - returning : -[UserModel(id=1, firstName=Arthur_session, lastName=Martirosyan, email=arthur@mail.ru, password=123), UserModel(id=2, firstName=gago, lastName=Martirosyan, email=gago@mail.ru, password=123456789)]
+2021-02-16 12:46:40.805 INFO  am.gitc.spring_exp.aspect.LogAspect - after : {-am.gitc.spring_exp.services.Impl.UserServImpl@78203178-getAll-} args=[]
+2021-02-16 12:46:40.805 INFO  am.gitc.spring_exp.aspect.LogAspect - Around Execution of method {-am.gitc.spring_exp.services.Impl.UserServImpl@78203178-getAll-} took 6 ms
+2021-02-16 13:09:52.913 INFO  o.a.coyote.http11.Http11Processor - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x020x000x010x000x010xfc0x030x030x180xe30x8eNQH0xc60x960xea0x93n0x9d0x890xcf0xfa0xa20x1e0xbf0x02$0x820xff0xaf0x9a0xf7W0xab00xb6F0x06x]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:417)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:261)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)

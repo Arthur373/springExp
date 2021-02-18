@@ -24,7 +24,7 @@ public class LogAspect {
         String args = Arrays.stream(joinPoint.getArgs())
                 .map(a -> a.toString())
                 .collect(Collectors.joining(","));
-        log.info("after : {-" + joinPoint.getSignature().getName()  + "-} args=[" + args + "]");
+        log.info("after : {-" + joinPoint.getTarget().toString() + "-" + joinPoint.getSignature().getName()  + "-} args=[" + args + "]");
     }
 
     @AfterReturning(pointcut = "callServicesPublic()",returning="retVal")
@@ -42,7 +42,7 @@ public class LogAspect {
         long start = System.currentTimeMillis();
         Object result = pjp.proceed();
         long end = System.currentTimeMillis();
-        log.info("Around Execution of method {-" + pjp.getSignature().getName() + "-} took " + (end - start) + " ms");
+        log.info("Around Execution of method {-" + pjp.getTarget() + "-"  + pjp.getSignature().getName() + "-} took " + (end - start) + " ms");
         return result;
     }
 
