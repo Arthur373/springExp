@@ -26,5 +26,9 @@ public class UserModel {
 
     private String password;
 
+    @Enumerated(EnumType.STRING)
+    private Status status;
 
+    @Enumerated(EnumType.STRING)
+    private Role role;
 }
